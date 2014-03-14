@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Template>
+  <TemplateConfiguration>
+    <_Name>MvvmCross ViewModel</_Name>
+    <Icon>md-text-file-icon</Icon>
+    <_Category>General</_Category>
+    <LanguageName>C#</LanguageName>
+    <_Description>An MvvmCoss ViewModel.</_Description>
+  </TemplateConfiguration>
+  <TemplateFiles>
+    <File name="${Name}.cs" >
+      <![CDATA[
+      using System;
+using Cirrious.MvvmCross.ViewModels;
+
+namespace ${Namespace}.ViewModels
+{
+	public class ${Name} : MvxViewModel
+
+	{
+		
+	}
+}
+
+]]>
+    </File>
+  </TemplateFiles>
+</Template>
