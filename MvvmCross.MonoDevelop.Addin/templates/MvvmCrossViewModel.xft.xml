@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Template>
+<Template Originator="Peter Newhook" Created="03/13/2014" LastModified="03/13/2014">
   <TemplateConfiguration>
     <_Name>MvvmCross ViewModel</_Name>
-    <Icon>md-text-file-icon</Icon>
+    <Icon>md-class-file</Icon>
     <_Category>General</_Category>
     <LanguageName>C#</LanguageName>
-    <_Description>An MvvmCoss ViewModel.</_Description>
+    <_Description>An MvvmCross ViewModel.</_Description>
   </TemplateConfiguration>
   <TemplateFiles>
     <File name="${Name}.cs" >

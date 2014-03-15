@@ -11,6 +11,7 @@
        version     = "0.1">
   <Runtime>
     <Import file="templates/MvvmCrossViewModel.xft.xml" />
+    <Import file="templates/MvvmCrossAndroidView.xft.xml" />
   </Runtime>
   <Dependencies>
     <Addin id="::MonoDevelop.Core" version="4.0.3"/>
@@ -20,5 +21,11 @@
   <Extension path="/MonoDevelop/Ide/FileTemplates">
     <FileTemplate id ="MvvmCross.ViewModel"
 		              file="templates/MvvmCrossViewModel.xft.xml"/>
+    <FileTemplate id ="MvvmCross.Android.View"
+		              file="templates/MvvmCrossAndroidView.xft.xml"/>
+  </Extension>
+  
+  <Extension path = "/MonoDevelop/Ide/CodeTemplates">
+    <CodeTemplate file="templates/snippets.xml" />
   </Extension>
 </Addin>

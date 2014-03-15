@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version>1.0</Version>
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>pmvx</Shortcut>
+      <_Description>MVVMCross Property</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="type" isIdentifier="true">
+        <Default>object</Default>
+      </Variable>
+      <Variable name="field" isIdentifier="true">
+        <Default>_fieldName</Default>
+      </Variable>
+      <Variable name="name" isIdentifier="true">
+        <Default>PropertyName</Default>
+      </Variable>
+    </Variables>
+    <Code>
+      <![CDATA[private $type$ $field$;
+public $type$ $name$ { 
+	get { return $field$; }
+	set {
+		$field$ = value;
+		RaisePropertyChanged (() => $name$);
+	}
+}]]>
+    </Code>
+  </CodeTemplate>
+</CodeTemplates>

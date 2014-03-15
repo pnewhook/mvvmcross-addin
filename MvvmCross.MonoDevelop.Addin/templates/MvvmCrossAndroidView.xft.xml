@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Template Originator="Peter Newhook" Created="03/13/2014" LastModified="03/13/2014">
+  <TemplateConfiguration>
+    <_Name>MvvmCross View</_Name>
+    <Icon>md-class-file</Icon>
+    <_Category>Android</_Category>
+    <LanguageName>C#</LanguageName>
+    <ProjectType>MonoDroid</ProjectType>
+    <_Description>An MvvmCross Android View.</_Description>
+  </TemplateConfiguration>
+  <TemplateFiles>
+    <File name="${Name}.cs" >
+      <![CDATA[
+using System;
+using Cirrious.MvvmCross.Droid.Views;
+
+namespace ${Namespace}.Android.Views
+{
+	[Activity (Label="Landing")]
+	public class ${Name} : MvxActivity
+	{
+		protected override void OnCreate(Bundle bundle)
+		{
+			base.OnCreate (bundle);
+			SetContentView (Resource.Layout.LandingView);
+		}
+	}
+}
+
+
+]]>
+    </File>
+  </TemplateFiles>
+</Template>
