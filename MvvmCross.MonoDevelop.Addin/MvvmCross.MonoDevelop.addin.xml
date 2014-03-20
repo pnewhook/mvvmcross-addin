@@ -12,6 +12,8 @@
   <Runtime>
     <Import file="templates/MvvmCrossViewModel.xft.xml" />
     <Import file="templates/MvvmCrossAndroidView.xft.xml" />
+    <Import file="templates/MvvmCrossValueConverter.xft.xml" />
+    <Import file="templates/snippets.xml" />
   </Runtime>
   <Dependencies>
     <Addin id="::MonoDevelop.Core" version="4.0.3"/>
@@ -23,6 +25,8 @@
 		              file="templates/MvvmCrossViewModel.xft.xml"/>
     <FileTemplate id ="MvvmCross.Android.View"
 		              file="templates/MvvmCrossAndroidView.xft.xml"/>
+    <FileTemplate id ="MvvmCross.Android.ValueConverter"
+		              file="templates/MvvmCrossValueConverter.xft.xml"/>
   </Extension>
   
   <Extension path = "/MonoDevelop/Ide/CodeTemplates">

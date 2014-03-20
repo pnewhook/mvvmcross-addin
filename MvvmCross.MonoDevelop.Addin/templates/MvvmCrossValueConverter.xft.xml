@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+
+<Template Originator="Peter Newhook" Created="03/19/2014" LastModified="03/19/2014">
+  <TemplateConfiguration>
+    <_Name>MvvmCross ValueConverter</_Name>
+    <Icon>md-class-file</Icon>
+    <_Category>General</_Category>
+    <LanguageName>C#</LanguageName>
+    <_Description>An MvvmCross Value Converter.</_Description>
+  </TemplateConfiguration>
+  <TemplateFiles>
+    <File name="${Name}.cs" >
+      <![CDATA[
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Cirrious.CrossCore.Converters;
+
+namespace ${Namespace}.Converters
+{
+
+	public class ${Name}
+        : MvxValueConverter<SourceType, TargetType>
+    {
+        protected override Special Convert(string value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        {
+            value = value ?? "";
+            if (value.Length < 3)
+                return Special.iOS;
+            if (value.Length < 6)
+                return Special.WindowsPhone;
+            return Special.Android;
+        }
+    }
+}
+
+]]>
+    </File>
+  </TemplateFiles>
+</Template>
