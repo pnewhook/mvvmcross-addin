@@ -21,18 +21,14 @@ namespace ${Namespace}.Converters
 {
 
 	public class ${Name}
-        : MvxValueConverter<SourceType, TargetType>
+        : MvxValueConverter<TFrom, TTo>
+  {
+
+    protected override TTo Convert(TFrom value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
-        protected override Special Convert(string value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-        {
-            value = value ?? "";
-            if (value.Length < 3)
-                return Special.iOS;
-            if (value.Length < 6)
-                return Special.WindowsPhone;
-            return Special.Android;
-        }
+            
     }
+  }
 }
 
 ]]>
