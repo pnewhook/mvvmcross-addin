@@ -4,7 +4,7 @@
   <TemplateConfiguration>
     <_Name>MvvmCross ValueConverter</_Name>
     <Icon>md-class-file</Icon>
-    <_Category>General</_Category>
+    <_Category>MvvmCross</_Category>
     <LanguageName>C#</LanguageName>
     <_Description>An MvvmCross Value Converter.</_Description>
   </TemplateConfiguration>

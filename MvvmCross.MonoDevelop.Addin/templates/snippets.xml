@@ -6,7 +6,7 @@
       <Version>1.0</Version>
       <MimeType>text/x-csharp</MimeType>
       <Shortcut>pmvx</Shortcut>
-      <_Description>MVVMCross Property</_Description>
+      <_Description>MVVMCross property that calls RaisePropertyChanged</_Description>
       <TemplateType>Expansion</TemplateType>
     </Header>
     <Variables>
