@@ -10,9 +10,10 @@
        category    = "Mobile Development"
        version     = "0.1">
   <Runtime>
-    <Import file="templates/MvvmCrossViewModel.xft.xml" />
     <Import file="templates/MvvmCrossAndroidView.xft.xml" />
+    <Import file="templates/MvvmCrossFragment.xft.xml" />
     <Import file="templates/MvvmCrossValueConverter.xft.xml" />
+    <Import file="templates/MvvmCrossViewModel.xft.xml" />
     <Import file="templates/snippets.xml" />
   </Runtime>
   <Dependencies>
@@ -21,12 +22,14 @@
   </Dependencies>
 
   <Extension path="/MonoDevelop/Ide/FileTemplates">
-    <FileTemplate id ="MvvmCross.ViewModel"
-		              file="templates/MvvmCrossViewModel.xft.xml"/>
     <FileTemplate id ="MvvmCross.Android.View"
 		              file="templates/MvvmCrossAndroidView.xft.xml"/>
+    <FileTemplate id ="MvvmCross.Android.Fragment"
+		              file="templates/MvvmCrossFragment.xft.xml"/>
     <FileTemplate id ="MvvmCross.Android.ValueConverter"
 		              file="templates/MvvmCrossValueConverter.xft.xml"/>
+    <FileTemplate id ="MvvmCross.ViewModel"
+		              file="templates/MvvmCrossViewModel.xft.xml"/>
   </Extension>
   
   <Extension path = "/MonoDevelop/Ide/CodeTemplates">

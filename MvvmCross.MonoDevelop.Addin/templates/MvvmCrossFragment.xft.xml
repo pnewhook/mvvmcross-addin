@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Template Originator="Peter Newhook" Created="03/13/2014" LastModified="03/13/2014">
+  <TemplateConfiguration>
+    <_Name>MvvmCross Fragment</_Name>
+    <Icon>md-class-file</Icon>
+    <_Category>MvvmCross</_Category>
+    <LanguageName>C#</LanguageName>
+    <ProjectType>MonoDroid</ProjectType>
+    <_Description>An MvvmCross Android View.</_Description>
+  </TemplateConfiguration>
+  <TemplateFiles>
+    <File name="${Name}.cs" >
+      <![CDATA[using System;
+using Android.OS;
+using Android.Views;
+using Cirrious.MvvmCross.Binding.Droid.BindingContext;
+using Cirrious.MvvmCross.Droid.Fragging.Fragments;
+
+namespace ${Namespace}.Android.Android.Views.Fragments
+{
+	public class ${Name} : MvxFragment
+	{
+
+		public ${Name} ()
+		{
+			RetainInstance = true;
+		}
+
+		public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+		{
+			var ignored =  base.OnCreateView(inflater, container, savedInstanceState);
+			return this.BindingInflate(Resource.Layout.${Name}_Fragment, null);
+		}
+	}
+}
+]]>
+    </File>
+  </TemplateFiles>
+</Template>
