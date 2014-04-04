@@ -53,7 +53,7 @@ public $type$ $name$ {
     </Variables>
     <Code>
       <![CDATA[private MvxCommand $field$;
-		public MvxCommand $name$ {
+      public MvxCommand $name$ {
 			get {
 				$field$ = $field$ ?? new MvxCommand ($command$);
 				return $field$;

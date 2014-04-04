@@ -8,7 +8,7 @@
     <_Description>An MvvmCross ViewModel.</_Description>
   </TemplateConfiguration>
   <TemplateFiles>
-    <File name="${Name}.cs" >
+    <File name="${Name}" DefaultExtension=".cs" DefaultName="MvvmFragment" AddStandardHeader="True">
       <![CDATA[
       using System;
 using Cirrious.MvvmCross.ViewModels;

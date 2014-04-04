@@ -9,7 +9,7 @@
     <_Description>An MvvmCross Value Converter.</_Description>
   </TemplateConfiguration>
   <TemplateFiles>
-    <File name="${Name}.cs" >
+    <File name="${Name}" DefaultExtension=".cs" DefaultName="MvvmFragment" AddStandardHeader="True">
       <![CDATA[
 using System;
 using System.Collections.Generic;
