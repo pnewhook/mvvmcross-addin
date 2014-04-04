@@ -26,7 +26,7 @@ public $type$ $name$ {
 	get { return $field$; }
 	set {
 		$field$ = value;
-		RaisePropertyChanged (() => $name$);
+		RaisePropertyChanged(() => $name$);
 	}
 }]]>
     </Code>
@@ -48,14 +48,47 @@ public $type$ $name$ {
         <Default>CommandName</Default>
       </Variable>
       <Variable name="command" isIdentifier="true">
-        <Default>Methodname</Default>
+        <Default>MethodName</Default>
       </Variable>
     </Variables>
     <Code>
       <![CDATA[private MvxCommand $field$;
       public MvxCommand $name$ {
 			get {
-				$field$ = $field$ ?? new MvxCommand ($command$);
+				$field$ = $field$ ?? new MvxCommand($command$);
+				return $field$;
+			}
+		}]]>
+    </Code>
+  </CodeTemplate>
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version>1.0</Version>
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>mvxcg</Shortcut>
+      <_Description>MVVMCross generic command</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="field" isIdentifier="true">
+        <Default>_field</Default>
+      </Variable>
+      <Variable name="name" isIdentifier="true">
+        <Default>CommandName</Default>
+      </Variable>
+      <Variable name="command" isIdentifier="true">
+        <Default>MethodName</Default>
+      </Variable>
+      <Variable name="type" isIdentifier="true">
+        <Default>TParameter</Default>
+      </Variable>
+    </Variables>
+    <Code>
+      <![CDATA[private MvxCommand<$type$> $field$;
+      public MvxCommand<$type$> $name$ {
+			get {
+				$field$ = $field$ ?? new MvxCommand<$type$>(item => $command$(item));
 				return $field$;
 			}
 		}]]>
